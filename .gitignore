@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# AI Team cache (downloaded by workflow)
+.amazing-team-cache/
+
+# AI Team local foundation (downloaded by `amazingteam local`)
+.amazing-team-local/
+
+# OpenCode config (auto-generated, can be regenerated)
+# opencode.jsonc

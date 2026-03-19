@@ -1,0 +1,2 @@
+# ci-analyst failure patterns
+

@@ -1,0 +1,11 @@
+id: template
+title: Task Title
+type: feature
+status: backlog
+priority: medium
+owner_role: developer
+depends_on: []
+blocked_by: []
+acceptance_criteria: []
+risk_level: low
+module_scope: []
