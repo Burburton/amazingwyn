@@ -16,7 +16,7 @@ llm:
   # API key is set via environment variable: AMAZINGTEAM_API_KEY
 
 amazingteam:
-  version: "3.0.20"
+  version: "3.0.22"
 
 workflow:
   commit_mode: "pr"
