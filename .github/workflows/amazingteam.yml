@@ -48,5 +48,5 @@ jobs:
           AMAZINGTEAM_API_KEY: ${{ secrets.AMAZINGTEAM_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          model: alibaba-coding-plan/glm-5
+          model: bailian-coding-plan/glm-5
           use_github_token: true
