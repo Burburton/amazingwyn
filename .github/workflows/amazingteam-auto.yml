@@ -39,9 +39,9 @@ jobs:
 
       - uses: actions/checkout@v4
 
-      - uses: Burburton/amazingteam-action@v3.0.22
+      - uses: Burburton/amazingteam-action@v3.0.23
         with:
-          version: '3.0.21'
+          version: '3.0.23'
 
       - name: "Read Config"
         id: config
@@ -140,9 +140,9 @@ jobs:
           git config --global user.name "opencode-bot"
           git config --global user.email "opencode-bot@users.noreply.github.com"
 
-      - uses: Burburton/amazingteam-action@v3.0.22
+      - uses: Burburton/amazingteam-action@v3.0.23
         with:
-          version: '3.0.21'
+          version: '3.0.23'
 
       - name: "Create Sub-Issues"
         id: create
