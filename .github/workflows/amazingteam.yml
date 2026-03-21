@@ -37,9 +37,9 @@ jobs:
           git config --global user.email "opencode-bot@users.noreply.github.com"
 
       - name: Setup AmazingTeam
-        uses: Burburton/amazingteam-action@v3.0.9
+        uses: Burburton/amazingteam-action@v3.0.17
         with:
-          version: '3.0.9'
+          version: '3.0.17'
           config: 'amazingteam.config.yaml'
 
       - name: Run OpenCode
