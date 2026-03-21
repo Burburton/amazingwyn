@@ -6,23 +6,23 @@ github_issue: 1
 
 subtasks:
   
-    - issue: 22
+    - issue: 25
       title: "Analyze and design"
       status: pending
       depends_on: []
   
-    - issue: 23
+    - issue: 26
       title: "Implement solution"
       status: pending
       depends_on: [
-  "22"
+  "25"
 ]
   
-    - issue: 24
+    - issue: 27
       title: "Test and validate"
       status: pending
       depends_on: [
-  "23"
+  "26"
 ]
 
 parallel_config:
