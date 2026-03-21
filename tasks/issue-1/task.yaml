@@ -5,6 +5,25 @@ level: 0
 github_issue: 1
 
 subtasks:
+  
+    - issue: 15
+      title: "Analyze and design"
+      status: pending
+      depends_on: []
+  
+    - issue: 16
+      title: "Implement solution"
+      status: pending
+      depends_on: [
+  0
+]
+  
+    - issue: 17
+      title: "Test and validate"
+      status: pending
+      depends_on: [
+  1
+]
 
 parallel_config:
   max_concurrent: 3
