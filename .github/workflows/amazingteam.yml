@@ -49,3 +49,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           model: alibaba-coding-plan/glm-5
+          use_github_token: true
