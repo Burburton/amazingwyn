@@ -1,28 +1,30 @@
 id: issue-1
 title: "落地这个项目"
 status: in_progress
-level: 0
 github_issue: 1
 
 subtasks:
   
-    - issue: 28
-      title: "Analyze the spec and design the system architecture for the requirements planner"
+    - issue: 31
+      title: "Analyze and design"
       status: pending
+      retry_count: 0
       depends_on: []
   
-    - issue: 29
-      title: "Implement the core backend logic and frontend UI according to the architecture design"
+    - issue: 32
+      title: "Implement solution"
       status: pending
+      retry_count: 0
       depends_on: [
-  "28"
+  "31"
 ]
   
-    - issue: 30
-      title: "Perform integration testing and validate the system against the specification requirements"
+    - issue: 33
+      title: "Test and validate"
       status: pending
+      retry_count: 0
       depends_on: [
-  "29"
+  "32"
 ]
 
 parallel_config:
