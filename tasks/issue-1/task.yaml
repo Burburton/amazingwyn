@@ -6,23 +6,23 @@ github_issue: 1
 
 subtasks:
   
-    - issue: 25
-      title: "Analyze and design"
+    - issue: 28
+      title: "Analyze the spec and design the system architecture for the requirements planner"
       status: pending
       depends_on: []
   
-    - issue: 26
-      title: "Implement solution"
+    - issue: 29
+      title: "Implement the core backend logic and frontend UI according to the architecture design"
       status: pending
       depends_on: [
-  "25"
+  "28"
 ]
   
-    - issue: 27
-      title: "Test and validate"
+    - issue: 30
+      title: "Perform integration testing and validate the system against the specification requirements"
       status: pending
       depends_on: [
-  "26"
+  "29"
 ]
 
 parallel_config:
