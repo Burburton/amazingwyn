@@ -1,0 +1,10 @@
+id: issue-1
+title: "落地这个项目"
+status: in_progress
+level: 0
+github_issue: 1
+
+subtasks:
+
+parallel_config:
+  max_concurrent: 3
