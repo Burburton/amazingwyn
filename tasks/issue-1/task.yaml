@@ -6,25 +6,24 @@ github_issue: 1
 
 subtasks:
   
-    - issue: 18
-      title: "架构设计与技术选型"
+    - issue: 22
+      title: "Analyze and design"
       status: pending
       depends_on: []
   
-    - issue: 19
-      title: "后端核心API与数据层开发"
+    - issue: 23
+      title: "Implement solution"
       status: pending
-      depends_on: [0]
+      depends_on: [
+  "22"
+]
   
-    - issue: 20
-      title: "前端界面开发与功能集成"
+    - issue: 24
+      title: "Test and validate"
       status: pending
-      depends_on: [1]
-  
-    - issue: 21
-      title: "系统集成测试与部署上线"
-      status: pending
-      depends_on: [2]
+      depends_on: [
+  "23"
+]
 
 parallel_config:
   max_concurrent: 3
