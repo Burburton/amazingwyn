@@ -10,13 +10,13 @@ project:
   framework: "node"
 
 llm:
-  model: "bailian-coding-plan/glm-5"
-  small_model: "bailian-coding-plan/glm-5"
+  model: "alibaba-coding-plan/glm-5"
+  small_model: "alibaba-coding-plan/glm-5"
   base_url: "https://coding.dashscope.aliyuncs.com/apps/anthropic/v1"
   # API key is set via environment variable: AMAZINGTEAM_API_KEY
 
 amazingteam:
-  version: "3.0.9"
+  version: "3.0.18"
 
 workflow:
   commit_mode: "pr"
