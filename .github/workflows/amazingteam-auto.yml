@@ -600,6 +600,47 @@ jobs:
           version: '3.0.23'
           config: 'amazingteam.config.yaml'
 
+      - name: "Override OpenCode Config"
+        run: |
+          # Override opencode.jsonc with optimized config for faster execution
+          cat > opencode.jsonc << 'EOF'
+          {
+            "$schema": "https://opencode.ai/config.json",
+            "model": "default",
+            "default_agent": "build",
+            "autoupdate": true,
+            "permission": {
+              "edit": "allow",
+              "bash": "allow"
+            },
+            "tools": {
+              "write": true,
+              "edit": true,
+              "bash": true
+            },
+            "provider": {
+              "bailian-coding-plan": {
+                "npm": "@ai-sdk/anthropic",
+                "name": "Alibaba Cloud Bailian Coding Plan",
+                "options": {
+                  "baseURL": "https://coding.dashscope.aliyuncs.com/apps/anthropic/v1",
+                  "apiKey": "{env:AMAZINGTEAM_API_KEY}"
+                },
+                "models": {
+                  "glm-5": {
+                    "name": "GLM-5",
+                    "limit": {
+                      "context": 202752,
+                      "output": 16384
+                    }
+                  }
+                }
+              }
+            }
+          }
+          EOF
+          echo "Overridden opencode.jsonc for faster execution"
+
       - name: "Prepare Prompt"
         id: prompt
         env:
@@ -733,6 +774,47 @@ jobs:
         with:
           version: '3.0.23'
           config: 'amazingteam.config.yaml'
+
+      - name: "Override OpenCode Config"
+        run: |
+          # Override opencode.jsonc with optimized config for faster execution
+          cat > opencode.jsonc << 'EOF'
+          {
+            "$schema": "https://opencode.ai/config.json",
+            "model": "default",
+            "default_agent": "build",
+            "autoupdate": true,
+            "permission": {
+              "edit": "allow",
+              "bash": "allow"
+            },
+            "tools": {
+              "write": true,
+              "edit": true,
+              "bash": true
+            },
+            "provider": {
+              "bailian-coding-plan": {
+                "npm": "@ai-sdk/anthropic",
+                "name": "Alibaba Cloud Bailian Coding Plan",
+                "options": {
+                  "baseURL": "https://coding.dashscope.aliyuncs.com/apps/anthropic/v1",
+                  "apiKey": "{env:AMAZINGTEAM_API_KEY}"
+                },
+                "models": {
+                  "glm-5": {
+                    "name": "GLM-5",
+                    "limit": {
+                      "context": 202752,
+                      "output": 16384
+                    }
+                  }
+                }
+              }
+            }
+          }
+          EOF
+          echo "Overridden opencode.jsonc for faster execution"
 
       - name: "Prepare Prompt"
         id: prompt
