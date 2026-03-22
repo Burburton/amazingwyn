@@ -1,0 +1,3 @@
+# AmazingWyn
+
+My awesome project

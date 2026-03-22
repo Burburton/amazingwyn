@@ -1,0 +1,2 @@
+# planner github issue patterns
+
